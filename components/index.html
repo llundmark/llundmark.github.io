@@ -1,1 +1,147 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Component Exercise</title>
+	<link href="normalize.css" rel="stylesheet" >
+    <link href="main.css" rel="stylesheet" >
+</head>
+<body>
+	<aside>
+	<h2>Barnes & Noble</h2>
+	<h3>Typography</h3>
+	<ul>
+	<li><a href="#!">Body Text</a></li>
+	<li><a href="#!">H1 Header</a></li>
+	</ul>
+	<h3>Atoms</h3>
+	<ul>
+	<li><a href="#!"></a></li>
+	</ul>
+	<h3>Navbar</h3>
+	<ul>
+	<li><a href="#!"></a></li>
+	</ul>
+	<h3>Links</h3>
+	<ul>
+	<li><a href="#!">Inline Links</a></li>
+	</ul>
+	<h3>Banners/Ads</h3>
+	<ul>
+	<li><a href="#!"></a></li>
+	</ul>
+	<h3>Slick Lists/Carousels</h3>
+	<ul>
+	<li><a href="#!"></a></li>
+	</ul>
+	<h3>Footer</h3>
+	<ul>
+	<li><a href="#!"></a></li>
+	</ul>
+	<h3>List Items</h3>
+	<ul>
+	<li><a href="#!">Book Page Listing</a></li>
+	</ul>
+	</aside>
+	
+	<main>
+	<div class="component-wrapper">
+	<img class="screenshot" src="images/typography/body.png" alt="body text">
+	<p> Body Text:: Lato - weight:400, line-height: 1.8, size: .9375rem.<br>If you're looking for what book to read next, explore the Barnes & Noble Top 100 Best Sellers list to discover all the current top books from your favorite authors and genres. Browse a large variety of books on topics you love or the best new books to discover! Whether you're interested in historical biographies, mysteries, or classic literature, discover the best <a href="#!">books</a> to read and recommended books from the book experts at B&N. You can also check out our list of the <a href="#!">best books of 2023</a>, the <a href="#!">best audiobooks of 2023</a>, and the <a href="#!">best books of all time!</a></p>
+	</div>
+	
+	<div class="component-wrapper">
+	<img class="screenshot" src="images/typography/h1.png" alt="header text">
+	<h1>B&N Top 100: Bestselling Books</h1>
+	<p>H1 Header:: Poynter,Georgia,serif - weight:400, line-height:1.25, size:2.5rem.</p>
+	</div>
+	
+	<div class="component-wrapper">
+	<img class="screenshot" src="" alt="header text">
+	</div>
+	
+	<div class="component-wrapper">
+	<img class="screenshot" src="" alt="header text">
+	</div>
+	
+	<div class="component-wrapper">
+	<img class="screenshot" src="" alt="header text">
+	</div>
+	
+	<div class="component-wrapper">
+	<img class="screenshot" src="images/links/inline-link.png" alt="link">
+	<p>Inline Link (body, author, format):: Lato - weight:400, line-height:1, size:.9375rem, color:#347d56</p>
+	<a href="#!">Rebecca Yarros</a>
+	</div>
+	
+	<div class="component-wrapper">
+	<img class="screenshot" src="images/links/" alt="link">
+	<p>Sidebar Link (body, author, format):: Lato - weight:400, line-height:1.25, size: 14px, color:#347d56</p>
+	<a href="#!">Rebecca Yarros</a>
+	</div>
+	
+	<div class="component-wrapper">
+	<img src="images/BnN-BookListing.png"	alt="book listing component" class="screenshot">
+	<div class="listing-wrapper">
+		<h3 class="list-index">1</h3>
+		<article class="listing">
+		
+		<div class="image-wrapper">
+			<img class="listing__cover" src="images/book1.webp" alt="book cover">
+			<svg class="wishlist-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+		</div>
+		<div class="info-wrapper">
+			<div class="header-wrapper">
+				<h4 class="listing__header">
+				<a href="#!">Onyx Storm (Deluxe Limited Edition)</a>
+				<span class="listing__date">(01/21/2025)</span>
+				</h4>
+			</div>
+			<p class="listing__author">by <a class="listing__link" href="#!">Rebecca Yarros</a></p>
+			<div class="listing__rating">
+				<img src="images/BookInfo__rating.png" alt="rating">
+			</div>
+			
+			<table class="pricinginfo">
+			<thead>
+			<tr>
+			<th class="pricinginfo__colheader">Format</th>
+			<th class="pricinginfo__colheader">BN.com</th>
+			<th class="pricinginfo__colheader">Availability</th>
+			</tr>
+			</thead>
+		
+			<tbody>
+			<tr>
+			<td class="pricinginfo__formatbtn">
+				<a class="listing__link" href="#!">Hardcover</a>
+			</td>
+			<td class="pricinginfo__price">$32.99</td>
+			<td class="pricinginfo__availability">
+			<svg class="pricinginfo__checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Pre-order Now</td>
+			</tr>
+			</tbody>
+			</table>
+		
+			<div class="bottom-row">
+			<p class="pricinginfo__options">Also available as: 
+			<a class="listing__link" href="#!">Hardcover</a>, 
+			<a class="listing__link" href="#!">See All 
+			<svg class="link-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></a> 
+			
+			</p>
+		
+			<a class="listing__orderbtn" href="#!">PRE-ORDER</a>
+			</div>
+			
+		</div>
+		
+		</article>
+	</div>
+	</div>
+	
+	
+</main>
+</body>
+</html>
