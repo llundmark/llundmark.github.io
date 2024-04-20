@@ -1,9 +1,4 @@
 /*  CSS File for Component Library*/
-
-	
-	html{
-		font-size:11pt;
-	}
 	
 	:root{
 		--green:#347d56;
@@ -17,12 +12,17 @@
 	margin:0;
 	padding:0;
 	color:#21282d;
-	font-size:.9375rem;
 	line-height:1.5;
+	}
+	
+	p{
+		font-size:15px;
 	}
 	
 	.screenshot{
 		width:auto;
+		max-width:1000px;
+		object-fit:cover;
 	}
 	
 	h1,h2{
@@ -30,11 +30,11 @@
 	}
 	
 	h2{
-		font-size:2.155rem;
+		font-size:29px;
 		font-style:italic;
 		color:#21282d;
 		font-weight:600;
-		line-height:1.3;
+		line-height:1.5;
 	}
 	
 	h3,h4{
@@ -49,7 +49,6 @@
 	
 	a{
 		font-family: Lato, sans-serif;
-		color:var(--green);
 	}
 	
 	a:hover{
@@ -94,11 +93,15 @@
 		font-weight:600;
 	}
 	
+	.small-text{
+		font-size:10px;
+	}
+	
 	/**  Page Header  **/
 	.searchbar__filter{
 		background-color:#ddd;
 		border: 1px solid #3e5962;
-		font-size:14px;
+		font-size:20px;
 		padding: 8px 32px 8px 16px;
 		cursor:pointer;
 	}
@@ -126,17 +129,45 @@
 	
 	.account__label{
 		text-transform:uppercase;
-		font-size:12px;
+		font-size:15px;
 		color:#484848 !important;
 		line-height:normal;
 	}
 	
 	.component-wrapper{
 		border:2px solid black;
+		padding:10px;
 	}
 	
 	.comps-sectionhead{
 		margin: 20px 0;
+	}
+	
+	/**  Banners  **/
+	
+	.banner-link{
+		background-color:var(--green-dark);
+		max-width:1000px;
+		display:block;
+		max-height:56px;
+		margin-bottom:3px;
+		
+	}
+	.ad__banner{
+		max-width:1000px;
+		object-fit:cover;
+	}
+	
+	.ad__text{
+		color:white;
+		text-align:center;
+		font-size:12px;
+		margin:0;
+		padding: 5px 0;
+	}
+	
+	.banner-list{
+		position:relative;
 	}
 	
 	.list-index{
@@ -204,15 +235,24 @@
 	
 	.listing__link{
 		text-decoration:none;
+		color:var(--green);
 	}
 	
 	.listing__link:hover{
 		text-decoration:underline;
 	}
+	.pricinginfo__colheader{
+		font-size:15px;
+	}
 	
 	.pricinginfo__price{
 		font-weight: 700;
-		font-size: 16px;
+		font-size: 20px;
+	}
+	
+	.pricinginfo__availability{
+		font-weight:600;
+		font-size:15px;
 	}
 	
 	.pricinginfo__price:hover{
@@ -237,15 +277,40 @@
 	}
 	
 	.account__icon{
-		width:18px;
-		height:18px;
+		width:24px;
+		height:24px;
 		fill:black;
 	}
 	
 	.clcontrol-left{
-		width:18px;
-		height:18px;
+		width:22px;
+		height:22px;
 		fill:black;
+	}
+	
+	.clcontrol-right{
+		width:22px;
+		height:22px;
+		fill:black;
+	}
+	
+	.cart-icon{
+		height:55px;
+		width:62px;
+	}
+	/**  Top Navbar  **/
+	
+	.topnav__item{
+		color:#484848 !important;
+		text-transform:uppercase;
+		font-weight:500;
+		border-right: 2px solid rgb(175, 157, 105);
+		text-decoration:none;
+		padding: 5px 10px 5px 0;
+	}
+	
+	.topnav__item:hover{
+		border-bottom: 1px solid rgb(175, 157, 105);
 	}
 	
 	.cart__items{
@@ -259,6 +324,18 @@
 		display:inline;
 		text-align:center;
 		padding:5px 8px;
+	}
+	
+	.wishlist-link{
+		text-transform:uppercase;
+		font-weight:500;
+		color:#484848;
+		text-decoration:none;
+		padding:5px;
+	}
+	
+	.wishlist-link:hover{
+		border-bottom: 1px solid rgb(175, 157, 105);
 	}
 	
 	.wishlist-icon{
@@ -304,7 +381,7 @@
 	.listing__orderbtn{
 		display:flex;
 		background-color:#3d6db5;
-		padding:.5rem 4rem;
+		padding:.9375rem 4rem;
 		color: white;
 		text-decoration:none;
 		align-items:center;
@@ -318,6 +395,17 @@
 		flex-shrink:0;
 		justify-content: space-between;
 		margin-top:10px;
+	}
+	
+	/**  Carousel/Slick List **/
+	
+	.list-link{
+		font-size:1.078rem;
+		color:black;
+	}
+	
+	.list-link:hover{
+		color:var(--green);
 	}
 	
 	/**  Footer  **/
@@ -340,18 +428,21 @@
 	
 	.ftrewards__text{
 		margin-bottom:2px; 
-		font-size:12px; 
+		font-size:15px; 
 		color:#6e7880;
 		letter-spacing:0.4px;		
 		line-height: 18px;
+		font-weight:500;
+		width:281px;
 	}
 	
 	.ftsubscribe__text{
-		font-size:12px; 
+		font-size:15px; 
 		color:#6e7880;
 		letter-spacing:0.4px;		
 		line-height: 18px;
 		width: 351px;
+		font-weight:500;
 	}
 	
 	.ftsubscribe__text a{
@@ -359,8 +450,8 @@
 	}
 	
 	.ft-featured__img{
-		height:57px;
-		width:52px;
+		height:72px;
+		width:75px;
 		display:block;
 		overflow:hidden;
 	}
@@ -373,7 +464,8 @@
 		font-weight:600;
 		align-items:center;
 		margin: 0 24px 10px 0;
-		max-width:70px;
+		max-width:75px;
+		font-size:14px;
 	}
 	
 	.footer-submitbtn{
@@ -411,6 +503,25 @@
 		height:30px;
 		display:inline-block;
 		line-height:30px;
+	}
+	
+	.location-icon{
+		width:18px;
+		height:24px;
+	}
+	
+	.ftlinklist__item{
+		color: #3e5962;
+		text-decoration:none;
+	}
+	
+	.ftlinklist__item:hover{
+		text-decoration:underline;
+	}
+	
+	.ftinline-link{
+		font-weight:600;
+		color:black;
 	}
 	
 	
