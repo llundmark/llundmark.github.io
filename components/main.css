@@ -641,14 +641,15 @@
 	
 	.ftinput__textbox{
 		color: rgb(33, 40, 45);
-		padding:10px 15px;
+		padding:8px 15px;
 		width:calc(100% - 40px);
 		max-width:260px;
 		display:flex;
 		flex-grow:1;
-		line-height:1.5;
+		line-height:1.4;
 		font-weight:600;
 		font-size:15px;
+		max-height:50px;
 	}
 	
 	.socialblock{
