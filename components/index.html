@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 	<title>Component Exercise</title>
 	<link href="normalize.css" rel="stylesheet" >
-    <link href="main.css" rel="stylesheet" >
+    <link href="main.css" type="text/css" rel="stylesheet" >
+	<link href="slick-1.8.1/slick/slick.css" type="text/css" rel="stylesheet">
+	<link href="slick-1.8.1/slick/slick-theme.css" type="text/css" rel="stylesheet">
 </head>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
 <body>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.js">
+</script>
 	<aside>
 	<h2>Barnes & Noble</h2>
 	<h3>Typography</h3>
@@ -99,6 +107,7 @@
 	<main>
 	<h1>Components</h1>
 	<h3 class="comps-sectionhead">Typography</h3>
+	
 	<div class="component-wrapper">
 	<img class="screenshot" src="images/typography/body.png" alt="body text" id="body-text">
 	<p> Body Text:: Lato - weight:400, line-height: 1.8, size: .9375rem.</p>
@@ -249,7 +258,7 @@
 	
 	<div class="component-wrapper">
 	<img class="screenshot" src="images/atoms/Cart.png" alt="icon" id="cart__icon">
-	<svg width="33" height="38" xmlns="http://www.w3.org/2000/svg"><path d="M23.097 18.988l-.165.783H7.77L5.75 8.862H25.25l-2.154 10.126zm-14.89 7.955c.934 0 1.692.713 1.692 1.591s-.758 1.59-1.693 1.59c-.933 0-1.691-.712-1.691-1.59 0-.878.758-1.591 1.691-1.591zm13.014 0c.934 0 1.691.713 1.691 1.591s-.757 1.59-1.691 1.59-1.692-.712-1.692-1.59c0-.872.746-1.58 1.672-1.591h.02zm5.802-19.454H5.5L4.241.689a.714.714 0 00-.713-.564H.471v1.363h2.447l4.476 24.21c-1.338.358-2.303 1.496-2.303 2.847 0 1.631 1.407 2.955 3.142 2.955 1.736 0 3.142-1.324 3.142-2.954 0-.595-.187-1.15-.508-1.613l7.695.01c-.308.449-.49.996-.49 1.583 0 1.627 1.401 2.946 3.132 2.946 1.73 0 3.133-1.32 3.133-2.946 0-1.627-1.403-2.945-3.133-2.945H8.844l-.822-4.446H24.15l.397-1.918.356-1.727.234-1 1.886-9.001z" fill="#000" fill-rule="evenodd"></path>
+	<svg width="33" height="38" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M23.097 18.988l-.165.783H7.77L5.75 8.862H25.25l-2.154 10.126zm-14.89 7.955c.934 0 1.692.713 1.692 1.591s-.758 1.59-1.693 1.59c-.933 0-1.691-.712-1.691-1.59 0-.878.758-1.591 1.691-1.591zm13.014 0c.934 0 1.691.713 1.691 1.591s-.757 1.59-1.691 1.59-1.692-.712-1.692-1.59c0-.872.746-1.58 1.672-1.591h.02zm5.802-19.454H5.5L4.241.689a.714.714 0 00-.713-.564H.471v1.363h2.447l4.476 24.21c-1.338.358-2.303 1.496-2.303 2.847 0 1.631 1.407 2.955 3.142 2.955 1.736 0 3.142-1.324 3.142-2.954 0-.595-.187-1.15-.508-1.613l7.695.01c-.308.449-.49.996-.49 1.583 0 1.627 1.401 2.946 3.132 2.946 1.73 0 3.133-1.32 3.133-2.946 0-1.627-1.403-2.945-3.133-2.945H8.844l-.822-4.446H24.15l.397-1.918.356-1.727.234-1 1.886-9.001z" fill="#000" fill-rule="evenodd"></path>
 	</svg>
 	
 	</div>
@@ -603,14 +612,30 @@
 	<div class="component-wrapper">
 	<img class="screenshot" src="images/banners/banner-list.png" alt="banner" id="banner-list">
 	<p>Banner Carousel</p>
-	<a class="banner-list" href="#!">
-	<svg class=" clcontrol clcontrol-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-	<!-- <img class="ad__banner" src="images/banners/totfbanner.jpg" alt="banner"> -->
-	<img class="ad__banner" src="images/banners/banner-list.png" alt="banner">
-	<svg class="clcontrol clcontrol-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-	</a>
-	
+	<div class="banner-list" href="#!">
+		<div>
+		<a href="#!"><img class="ad__banner" src="images/banners/totfbanner.jpg" alt="banner"></a>
+		</div>
+		<div>
+		<a href="#!"><img class="ad__banner" src="images/banners/aswtawwbanner.jpg" alt="banner"></a>
+		</div>
+		<div>
+		<a href="#!"><img class="ad__banner" src="images/banners/totfbanner.jpg" alt="banner"></a>
+		</div>
 	</div>
+	</div>
+	
+	<script type="text/javascript">
+		  $('.banner-list').slick({
+			  dots:true,
+			  autoplay:true,
+			  infinite: true,
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  prevArrow:"<img class='a-left control-c prev slick-prev' src='images/chevron-left.svg'> style='width:32px; height:32px; '",
+			  nextArrow:"<img class='a-right control-c next slick-next' src='images/chevron-right.svg'> style='width:32px; height:32px; '"
+		  });
+</script>
 	
 	<h3 class="comps-sectionhead">Footer</h3>
 	
